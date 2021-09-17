@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./data/style.css">
+    <link rel="stylesheet" href="./fontawesome-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit-icons.min.js"></script>
+    <title>Tienda 724</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="uk-flex uk-flex-between navbar-catalogue">
+        <div class="uk-flex uk-flex-middle">
+            <div uk-toggle="target: .menu-vertical-catalogue; cls: show" class="padding-horizontal-20">
+                <img class="icon-menu-catalogue" src="./data/menu.png" alt="">
+            </div>
+            <div>
+                <img src="./data/tienda724.png" class="logo-size-catalogue" alt="">
+            </div>
+            <div class="uk-inline">
+                <div class="cursor-pointer uk-flex uk-flex-middle" style="margin-left: 60px;">
+                    <img class="logo-store-size-catalogue" src="./data/logo2.png " alt=" ">
+                    <i class="fas fa-caret-down font-size-17"></i>
+                </div>
+                <div uk-drop="mode: click">
+                    <div style="position: relative;">
+                        <div class="drop-store-catalogue">
+                            <!-- <ul class="uk-list " style="padding-bottom: 20px;">
+                                <h6 class="uk-margin-remove font-size-10" style="width: 65px; padding-bottom: 10px;">Documento del proveedor</h6>
+                                <div class="hr-tab"></div>
+                                <button class="button-search-supplier-catalogue uk-text-bold">Buscar proveedor</button>
+                                <h6 class=" uk-margin-remove font-size-10">Seleccione tienda proveedora</h6>
+                                <div class="select-supplier-catalogue">
+                                    <select>
+                                        <option>--</option>
+                                        <option>opción 1</option>
+                                        <option>opción 2</option>
+                                        <option>opción 3</option>
+                                        <option>opción 4</option>
+                                    </select>
+                                    <div class="select_arrow-supplier-catalogue">
+                                    </div>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Proveedor:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">--</h6>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Documento:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">--000</h6>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Teléfono:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">000</h6>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Dirección:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">N/A</h6>
+                                </div>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-inline cursor-pointer padding-horizontal-30 uk-flex uk-flex-middle">
+            <button class="button-data-user-catalogue uk-flex uk-flex-middle">
+                <img class="logo-user-size-catalogue" src="./data/icono-de-usuario.png" alt=" ">
+                <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
+                <i class="fas fa-caret-down "></i>
+            </button>
+            <div uk-drop="mode: click">
+                <div class="uk-card uk-card-body uk-card-default uk-box-shadow-large drop-data-user-catalogue">
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove">Roles activados:</h5>
+                        <h5 class="uk-margin-remove ">Propietario de la empresa</h5>
+                    </div>
+                    <div class="hr-tab"></div>
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove ">Su documento es:</h5>
+                        <h5 class="uk-margin-remove ">CC: 55555555555001</h5>
+                    </div>
+                    <div class="hr-tab"></div>
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove">Id de usuario:</h5>
+                        <h5 class="uk-margin-remove ">94518</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Menu vertical ERP-->
+    <div style="position: relative;">
+        <div class="menu-vertical-catalogue">
+            <ul class="uk-list" style="padding-bottom: 20px;">
+                <div class="uk-flex uk-flex-between">
+                    <div style="margin-left: 33px;">
+                        <h4 class="uk-margin-remove color-red uk-text-bold">ERP</h4>
+                        <h4 class="uk-margin-remove color-red uk-text-bold">Dashboard</h4>
+                    </div>
+                    <div style="padding-right: 5px;">
+                        <div uk-toggle="target: .menu-vertical-sales; cls: show" style="margin-right: 10px;">
+                            <i class=" fas fa-times font-size-17 color-red cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-catalogue">
+                        <img class="img-menu-vertical-size-catalogue" src="./data/Iconografía/Inventario.png" alt="">
+                        <h4 class="uk-margin-remove uk-text-bold font-size-12">Inventario</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-catalogue">
+                        <img class="img-menu-vertical-size-catalogue" src="./data/Iconografía/Reportes.png" alt="">
+                        <h4 class="uk-margin-remove uk-text-bold font-size-12">Reportes</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-catalogue">
+                        <img class="img-menu-vertical-size-catalogue" src="./data/Iconografía/Terceros.png" alt="">
+                        <h4 class="uk-margin-remove uk-text-bold font-size-12">Tercero</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-catalogue">
+                        <img class="img-menu-vertical-size-catalogue" src="./data/Iconografía/Contabilidad.png" alt="">
+                        <h4 class="uk-margin-remove uk-text-bold font-size-12">Contabilidad</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-catalogue">
+                        <img class="img-menu-vertical-size-catalogue" src="./data/Iconografía/Pedidos.png" alt="">
+                        <h4 class="uk-margin-remove uk-text-bold font-size-12">Pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-catalogue">
+                        <img class="img-menu-vertical-size-catalogue" src="./data/Iconografía/Crear-producto.png" alt="">
+                        <h4 class="uk-margin-remove uk-text-bold font-size-12">Crear producto</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-catalogue">
+                        <img class="img-menu-vertical-size-catalogue" src="./data/Iconografía/Opciones-de-caja.png" alt="">
+                        <h4 class="uk-margin-remove uk-text-bold font-size-12">Opciones de caja</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-catalogue">
+                        <img class="img-menu-vertical-size-catalogue" src="./data/Iconografía/Domicilios.png" alt="">
+                        <h4 class="uk-margin-remove uk-text-bold font-size-12">Domicilios</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-catalogue">
+                        <img class="img-menu-vertical-size-catalogue" src="./data/Iconografía/administracion-de-pedidos.png" alt="">
+                        <h4 class="uk-margin-remove uk-text-bold font-size-12" style="width: 100px;">Administracion de pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-catalogue">
+                        <img class="img-menu-vertical-size-catalogue" src="./data/Iconografía/Domicilios.png" alt="">
+                        <h4 class="uk-margin-remove uk-text-bold font-size-12">Mesas</h4>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- Catalogo categorias -->
+    <div style="display: inline;">
+        <!-- Contenido -->
+        <div class="main-container-catalogue">
+            <div class="uk-flex uk-flex-middle navbar-search-products-catalogue">
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; padding-top: 18px; height: 45px; border-bottom: 18px solid white;">
+                    <h4 class="uk-margin-remove uk-text-bold">Catálogo de productos</h4>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-flex-center button-categories-catalogue">
+                    <h6 class="uk-margin-remove uk-text-bold color-red-3 cursor-pointer uk-text-center" style="padding-top: 21px;">Categorías</h6>
+                </div>
+                <div style="margin-left: 45px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-red-3 cursor-pointer">Marcas</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-red-3 cursor-pointer">Unidades de medida</h6>
+                </div>
+            </div>
+            <!-- Categorias -->
+            <div style="display: inline;">
+                <div class="uk-flex uk-flex-middle uk-flex-wrap" style="margin-top: 35px; margin-left: 25px;">
+                    <div class="uk-flex uk-flex-column" style="margin-bottom: 30px;">
+                        <div>
+                            <button class="buttons-categories-add-edit-catalogue" uk-toggle="target: #modal-add-category">Agregar</button>
+                            <div id="modal-add-category" uk-modal>
+                                <div class="uk-modal-dialog modal-add-category-catalogue">
+                                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                                        <h3 class="uk-margin-remove uk-text-bold color-red">Agregando categoría</h3>
+                                        <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                    </div>
+                                    <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                                    <div class="uk-flex uk-flex-column">
+                                        <input class="inputs-add-category-catalogue" type="text" placeholder="Descripción">
+                                        <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                                    </div>
+                                    <button class="buttons-add-category-catalogue">Agregar Categoría</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="buttons-categories-add-edit-catalogue" style="margin-top: 10px;">Editar</button>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/1.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Abarrotes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/1-09.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Accesorios</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/3.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Accesorios bike</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/6.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Aseo</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/5.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Aseo personal</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/4.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bebidas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/1-11.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bicicletas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/8.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Cacharreria</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/10.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Restaurantes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/12.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Carnes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/11.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Cigarrillos</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/4.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bebidas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/9.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Droguerias</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/1.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Abarrotes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/1-09.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Accesorios</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/3.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Accesorios bike</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/6.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Aseo</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/5.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Aseo personal</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/4.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bebidas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/1-11.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bicicletas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/8.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Cacharreria</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/10.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Restaurantes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/12.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Carnes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/11.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Cigarrillos</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/4.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bebidas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/9.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Droguerias</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/1.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Abarrotes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/1-09.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Accesorios</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/3.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Accesorios bike</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/6.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Aseo</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/5.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Aseo personal</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/4.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bebidas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/1-11.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bicicletas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/8.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Cacharreria</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/10.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Restaurantes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/12.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Carnes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/11.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Cigarrillos</h6>
+                    </button>
+                </div>
+            </div>
+            <!--Editar Categorias -->
+            <div style="display: none;">
+                <div class="uk-flex uk-flex-middle uk-flex-wrap" style="margin-top: 35px; margin-left: 25px;">
+                    <div class="uk-flex uk-flex-column" style="margin-bottom: 30px;">
+                        <button class="buttons-categories-add-edit-catalogue">Agregar</button>
+                        <button class="buttons-categories-add-edit-catalogue" style="margin-top: 10px;">Editar</button>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-1">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Abarrotes</h6>
+                    </button>
+                    <div id="modal-edit-category-1" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-red">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="ABARROTES">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-2">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Accesorios</h6>
+                    </button>
+                    <div id="modal-edit-category-2" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-red">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="ACCESORIOS">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-3">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Accesorios bike</h6>
+                    </button>
+                    <div id="modal-edit-category-3" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-red">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="ACCESORIOS BIKE">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-4">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Aseo</h6>
+                    </button>
+                    <div id="modal-edit-category-4" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-blue">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="ASEO">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-5">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Aseo personal</h6>
+                    </button>
+                    <div id="modal-edit-category-5" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-blue">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="ASEO PERSONAL">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-6">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bebidas</h6>
+                    </button>
+                    <div id="modal-edit-category-6" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-blue">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="BEBIDAS">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-7">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bicicletas</h6>
+                    </button>
+                    <div id="modal-edit-category-7" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-blue">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="BICICLETAS">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-8">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Cacharreria</h6>
+                    </button>
+                    <div id="modal-edit-category-8" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-blue">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="CACHARRERIA">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-9">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Restaurantes</h6>
+                    </button>
+                    <div id="modal-edit-category-9" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-blue">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="RESTAURANTES">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-10">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Carnes</h6>
+                    </button>
+                    <div id="modal-edit-category-10" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-blue">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="CARNES">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-11">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Cigarrillos</h6>
+                    </button>
+                    <div id="modal-edit-category-11" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-blue">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="CIGARRILLOS">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-12">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bebidas</h6>
+                    </button>
+                    <div id="modal-edit-category-12" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-blue">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="BEBIDAS">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue" uk-toggle="target: #modal-edit-category-13">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Droguerias</h6>
+                    </button>
+                    <div id="modal-edit-category-13" uk-modal>
+                        <div class="uk-modal-dialog modal-add-category-catalogue">
+                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                <h3 class="uk-margin-remove uk-text-bold color-blue">Editando categoría</h3>
+                                <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                            </div>
+                            <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la categoría</h5>
+                            <div class="uk-flex uk-flex-column">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="DROGUERIAS">
+                                <input class="inputs-add-category-catalogue" type="text" placeholder="URL de la imagen">
+                            </div>
+                            <button class="buttons-add-category-catalogue">Editar Categoría</button>
+                        </div>
+                    </div>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Abarrotes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Accesorios</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Accesorios bike</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Aseo</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Aseo personal</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bebidas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bicicletas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Cacharreria</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Restaurantes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Carnes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Cigarrillos</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bebidas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Droguerias</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Abarrotes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Accesorios</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Accesorios bike</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Aseo</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Aseo personal</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bebidas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Bicicletas</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Cacharreria</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Restaurantes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Carnes</h6>
+                    </button>
+                    <button class="button-categories-menu-vertical-catalogue">
+                        <div class="img-categories-menu-vertical-catalogue uk-align-center uk-margin-remove-bottom " style="background-image: url(./data/categorias/13.png); " uk-img></div>
+                        <h6 class="uk-margin-remove font-weight-500 padding-vertical-5 font-size-12">Cigarrillos</h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Catalogo marcas -->
+    <div style="display: none;">
+        <div class="main-container-catalogue">
+            <div class="uk-flex uk-flex-middle navbar-search-products-catalogue">
+                <div style="padding-left: 40px; margin-right: 40px;">
+                    <h4 class="uk-margin-remove uk-text-bold">Catálogo de productos</h4>
+                </div>
+                <div style="margin-left: 50px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-red-3 cursor-pointer">Categorías</h6>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-flex-center button-trademark-catalogue" style="margin-left: 45px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-red-3 cursor-pointer uk-text-center" style="padding-top: 21px;">Marcas</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-red-3 cursor-pointer">Unidades de medida</h6>
+                </div>
+            </div>
+            <div style="padding-left: 20px; padding-top: 60px;" uk-grid>
+                <div style="margin-right: -15px !important;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">100%</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">1st Endurance</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">3D</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Problems</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ABBOTT</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ABUS</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ACDELCO</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ACQUA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADAMS</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADIDAS</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADORO</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADIDAS</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADORO</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADVIL</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AG</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AGUARDIENTE NECTAR</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AGUILA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AGUILA ROJA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AJAX</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AJE</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ADVIL</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AG</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AJINOMEN</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AJOVER</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AK</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AK1</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AKURO</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Al Fresco</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Alamar</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Aldor</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Alimentos Polar</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AK</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">AK1</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Alival</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Aliños Mac</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Aliños Santa Elena</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALKALINA TRONEX</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALL NATURAL</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPINA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPISTE</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALQUERIA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALUMIFLEX</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">Aliños Mac</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -13px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-13 font-weight-500 width-90 uk-text-center">Aliños Santa Elena</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPINA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPISTE</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALQUERIA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALUMIFLEX</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPINA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPISTE</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALQUERIA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALUMIFLEX</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPINA</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALPISTE</h6>
+                    </div>
+                </div>
+                <div style="margin-right: -15px !important; height: 68px;">
+                    <div>
+                        <button class="buttons-select-trademarks-catalogue"></button>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 width-90 uk-text-center">ALQUERIA</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Unidades de medida -->
+    <div style="display: none;">
+        <div class="main-container-catalogue">
+            <div class="uk-flex uk-flex-middle navbar-search-products-catalogue">
+                <div style="padding-left: 40px; margin-right: 40px;">
+                    <h4 class="uk-margin-remove uk-text-bold">Catálogo de productos</h4>
+                </div>
+                <div style="margin-left: 20px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-red-3 cursor-pointer">Categorías</h6>
+                </div>
+                <div style="margin-left: 45px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-red-3 cursor-pointer">Marcas</h6>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-flex-center button-trademark-catalogue" style="margin-left: 55px; width: 190px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-red-3 cursor-pointer uk-text-center " style="padding-top: 21px; ">Unidades de medida</h6>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <div class="uk-flex uk-flex-middle" style="margin-top: 15px; margin-bottom: 15px; margin-left: 5px;">
+                            <div>
+                                <button class="button-cancel-movement-catalogue" uk-toggle="target: #modal-add-unit-measurement">Agregar</button>
+                                <div id="modal-add-unit-measurement" uk-modal>
+                                    <div class="uk-modal-dialog modal-add-measurement-catalogue">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Agregando unidad de medida</h3>
+                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                        </div>
+                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
+                                        <div class="uk-flex uk-flex-column">
+                                            <input class="inputs-add-category-catalogue" type="text" placeholder="Descripción">
+                                        </div>
+                                        <button class="buttons-add-category-catalogue">Agregar unidad de medida</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-bold uk-text-center width-150">Nombre</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-bold uk-text-center width-150" style="padding-left: 5px;">Descripción</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-bold uk-text-center width-80" style="padding-left: 120px;">Opciones</h6>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">(Tercio, 33 CL)</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">(Tercio, 33 CL)</h6>
+                            <div>
+                                <button class="button-cancel-movement-catalogue" uk-toggle="target: #modal-edit-unit-measurement" style="margin-left: 135px;">Editar</button>
+                                <div id="modal-edit-unit-measurement" uk-modal>
+                                    <div class="uk-modal-dialog modal-add-measurement-catalogue">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
+                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                        </div>
+                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
+                                        <div class="uk-flex uk-flex-column">
+                                            <input class="inputs-add-category-catalogue" type="text" placeholder="(Tercio, 33 CL.)">
+                                        </div>
+                                        <button class="buttons-add-category-catalogue">Editar unidad de medida</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">#N/A</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">#N/A</h6>
+                            <div>
+                                <button class="button-cancel-movement-catalogue" uk-toggle="target: #modal-edit-unit-measurement-1" style="margin-left: 135px;">Editar</button>
+                                <div id="modal-edit-unit-measurement-1" uk-modal>
+                                    <div class="uk-modal-dialog modal-add-measurement-catalogue">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
+                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                        </div>
+                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
+                                        <div class="uk-flex uk-flex-column">
+                                            <input class="inputs-add-category-catalogue" type="text" placeholder="#N/A">
+                                        </div>
+                                        <button class="buttons-add-category-catalogue">Editar unidad de medida</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">1 PAR</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">1 PAR</h6>
+                            <div>
+                                <button class="button-cancel-movement-catalogue" uk-toggle="target: #modal-edit-unit-measurement-2" style="margin-left: 135px;">Editar</button>
+                                <div id="modal-edit-unit-measurement-2" uk-modal>
+                                    <div class="uk-modal-dialog modal-add-measurement-catalogue">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
+                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                        </div>
+                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
+                                        <div class="uk-flex uk-flex-column">
+                                            <input class="inputs-add-category-catalogue" type="text" placeholder="1 PAR">
+                                        </div>
+                                        <button class="buttons-add-category-catalogue">Editar unidad de medida</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">1.5 ml</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">1.5 ml</h6>
+                            <div>
+                                <button class="button-cancel-movement-catalogue" uk-toggle="target: #modal-edit-unit-measurement-3" style="margin-left: 135px;">Editar</button>
+                                <div id="modal-edit-unit-measurement-3" uk-modal>
+                                    <div class="uk-modal-dialog modal-add-measurement-catalogue">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
+                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                        </div>
+                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
+                                        <div class="uk-flex uk-flex-column">
+                                            <input class="inputs-add-category-catalogue" type="text" placeholder="1.5 ml">
+                                        </div>
+                                        <button class="buttons-add-category-catalogue">Editar unidad de medida</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">1.75 ml</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">1.75 ml</h6>
+                            <div>
+                                <button class="button-cancel-movement-catalogue" uk-toggle="target: #modal-edit-unit-measurement-4" style="margin-left: 135px;">Editar</button>
+                                <div id="modal-edit-unit-measurement-4" uk-modal>
+                                    <div class="uk-modal-dialog modal-add-measurement-catalogue">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h3 class="uk-margin-remove uk-text-bold color-blue">Editando unidad de medida</h3>
+                                            <i class="fas fa-times cursor-pointer uk-modal-close"></i>
+                                        </div>
+                                        <h5 class="uk-margin-remove uk-text-bold" style="padding-top: 30px;">Nombre de la MU</h5>
+                                        <div class="uk-flex uk-flex-column">
+                                            <input class="inputs-add-category-catalogue" type="text" placeholder="1.75 ml">
+                                        </div>
+                                        <button class="buttons-add-category-catalogue">Editar unidad de medida</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">1.78 ml</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">1.78 ml</h6>
+                            <button class="button-cancel-movement-catalogue" style="margin-left: 135px;">Editar</button>
+                        </div>
+                        <div class="hr-ta-hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">10 ml</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">10 ml</h6>
+                            <button class="button-cancel-movement-catalogue" style="margin-left: 135px;">Editar</button>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">100 UND</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">100 UND</h6>
+                            <button class="button-cancel-movement-catalogue" style="margin-left: 135px;">Editar</button>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">110 ml</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">110 ml</h6>
+                            <button class="button-cancel-movement-catalogue" style="margin-left: 135px;">Editar</button>
+                        </div>
+                        <div class="hr-tab-list"></div>
+                        <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 5px;">
+                            <h6 class="width-110"></h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150">120 gr</h6>
+                            <h6 class="uk-margin-remove font-size-12 uk-text-center width-150" style="padding-left: 5px;">120 gr</h6>
+                            <button class="button-cancel-movement-catalogue" style="margin-left: 135px;">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
